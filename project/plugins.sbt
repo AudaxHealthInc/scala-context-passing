@@ -4,6 +4,8 @@ credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 resolvers += Resolver.url("Rally Plugin Releases",
   url("https://artifacts.werally.in/artifactory/ivy-plugins-release"))(Resolver.ivyStylePatterns)
 
+addSbtPlugin("com.rallyhealth" %% "rally-versioning" % "latest.integration")
+
 addSbtPlugin("com.rallyhealth" %% "rally-sbt-plugin" % "0.3.1")
 
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.4.0")
